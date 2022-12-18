@@ -1,0 +1,383 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  overflow-x: hidden;
+}
+.main-width {
+  width: 1280px;
+  max-width: 95%;
+  margin: 0 auto;
+  padding: 0px 20px;
+}
+
+.hero {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(to right, #870000, #190a05);
+}
+img {
+  width: 100%;
+  border-radius: 50%;
+}
+.img-container {
+  width: 450px;
+}
+
+header {
+  padding: 30px 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.logo > h1 {
+  color: white;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.an {
+  font-size: 2rem;
+  font-weight: bold;
+}
+nav .hamb {
+  width: 35px;
+  height: 24px;
+  right: 3px;
+  top: 35px;
+  z-index: 5;
+  background: white;
+  display: none;
+  position: absolute;
+  cursor: pointer;
+}
+
+nav .hamb span {
+  display: block;
+  background: black;
+  width: 100%;
+  height: 3px;
+  transition: 0.3s;
+  transition-property: transform, opacity;
+  display: none;
+}
+
+.nav .hamb span:nth-child(2) {
+  margin: 7px 0px;
+}
+.btn {
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: 1px solid white;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .nav-list li {
+  margin-left: 2rem;
+  display: inline-block;
+}
+
+a {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  transition: 0.7s;
+
+  font-size: 18px;
+  letter-spacing: 0.5px;
+}
+
+a:after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0;
+  background-color: rgb(216, 14, 48);
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s;
+}
+
+a:hover:after {
+  color: skyblue;
+  width: 100%;
+}
+.btn:hover {
+  background-color: rgb(73, 100, 33);
+}
+.hero-text {
+  color: white;
+  margin-bottom: 2rem;
+}
+
+strong {
+  color: white;
+  font-size: 35px;
+}
+.container {
+  padding-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+h1 {
+  margin: 20px 0;
+  font-size: 50px;
+}
+
+span {
+  color: rgb(92, 137, 24);
+}
+h3 {
+  font-size: 25px;
+}
+.desc {
+  width: 500px;
+  max-width: 100%;
+  font-size: 20px;
+
+  margin-bottom: 30px;
+}
+
+.social-icon a {
+  font-size: 30px;
+  border-radius: 50%;
+  width: 37px;
+  color: darkorange;
+  display: inline-flex;
+  margin-bottom: 40px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+.container .hero-text button {
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid white;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 24px;
+  background-color: transparent;
+}
+.container .hero-text button:hover {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+}
+.bottom {
+  margin-top: 2rem;
+  color: white;
+}
+@media screen and (max-width: 930px) {
+  nav .hamp {
+    display: initial;
+  }
+  .click {
+    top: 46px;
+  }
+  .click span {
+    position: absolute;
+    margin-top: 12px;
+  }
+  .click span :first-child {
+    transform: rotate (-40deg);
+  }
+  .click snap:nth-child(2) {
+    opacity: 0;
+    margin: 0;
+  }
+  .click span:last-child {
+    transform: rotate(40deg);
+    top: 0;
+  }
+  nav .nav-list {
+    position: absolute;
+    top: 70;
+    right: 0;
+    bottom: 30;
+    width: 80%;
+    height: 50%;
+    background: black;
+    padding: 6% 9%;
+    transition: 0.3s right;
+    border-radius: 10px;
+  }
+  nav .nav-list li {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* about */
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.abt {
+  width: 500px;
+  color: white;
+  margin-top: 1.5rem;
+}
+
+h5 {
+  font-size: 50px;
+  color: white;
+}
+.pro {
+  margin-top: 1rem;
+  background: transparent;
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: 1px solid white;
+}
+.about .abt h2 {
+  margin-bottom: 1rem;
+}
+.about .abt p {
+  margin-bottom: 1rem;
+}
+.about .abt h4 {
+  margin-bottom: 0.5rem;
+  text-decoration: underline;
+}
+
+.myAbout .images {
+  box-shadow: rgba(240, 236, 236, 0.25) 0px 14px 28px,
+    rgba(246, 241, 241, 0.22) 0px 10px 10px;
+  border-radius: 10px;
+  width: 600px;
+}
+
+/* Tech stack */
+
+.inner {
+  padding: 20pz;
+}
+
+.img {
+  width: 90px;
+  border: 1px solid;
+  padding: 10px;
+}
+
+.container {
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  grid-gap: 2rem;
+  padding: 1rem 80px;
+  font-size: 1.2rem;
+}
+
+.skill-box {
+  padding: 1rem;
+  cursor: pointer;
+  background-color: rgb(212, 104, 38);
+  border-radius: 10px;
+}
+
+/* contact */
+
+.contact {
+  box-shadow: rgba(255, 253, 253, 0.25) 0px 54px 55px,
+    rgba(238, 236, 236, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(246, 243, 243, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  margin: 0 auto;
+  width: 500px;
+  padding: 1rem;
+  border: 1px solid;
+  text-align: center;
+  color: white;
+  margin-top: 2rem;
+}
+.contact h6 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contact h3 {
+  margin-bottom: 1rem;
+}
+.icon {
+  font-size: 2rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+.h4 {
+  margin-bottom: 1rem;
+}
+
+.resume-btn {
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  border-radius: 10px;
+}
+
+.resume {
+  border: 1px solid white;
+}
+.resume button {
+  padding: 0.5rem;
+  background: transparent;
+  border-radius: 10px;
+  border: 1px solid white;
+
+  border: none;
+}
+.resume-btn:hover {
+  background-color: rgb(67, 93, 27);
+}
+
+/* project */
+
+.projects {
+  color: white;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  grid-gap: 2rem;
+}
+
+.box {
+  border: 1px solid white;
+  border-radius: 10px;
+  box-shadow: rgba(255, 253, 253, 0.25) 0px 54px 55px,
+    rgba(238, 236, 236, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(246, 243, 243, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.projects .box img {
+  padding: 10px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.projects .box .font {
+  font-size: 2rem;
+  margin-right: 1rem;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
